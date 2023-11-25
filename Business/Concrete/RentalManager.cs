@@ -36,5 +36,10 @@ namespace Business.Concrete
             }
            
         }
+
+        public IDataResult<List<Rental>> GetAll()
+        {
+            return new DataSuccessResult<List<Rental>>(_rentalDal.GetAll(), Messages.RentalListed);
+        }
     }
 }

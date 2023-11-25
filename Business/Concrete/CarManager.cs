@@ -26,9 +26,9 @@ namespace Business.Concrete
 
      
 
-        IDataResult<List<Car>> ICarService.GetAll()
+        public IDataResult<List<Car>>GetAll()
         {
-            if (DateTime.Now.Hour==20)
+            if (DateTime.Now.Hour==14)
             {
                 return new ErrorDataResult<List<Car>>(Messages.MaintenanceTime); 
 
@@ -37,6 +37,14 @@ namespace Business.Concrete
 
 
 
+        }
+
+        public IResult Add(Car car)
+        {
+            _carDal.Add(car);
+            return new SuccessResult(Messages.CarAdded);
+            {  
+            };
         }
 
 

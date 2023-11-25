@@ -21,6 +21,10 @@ namespace Business.Constants
        public static string DeletedSuccess="kullanıcı silindi";
         public static string NotDeleted="Böyle bir kullanıcı olmadığından silme işlemi gerçekleştirilemiyor.";
        public static string NotRetrieveCar="Araba teslim alınmadığından bu işlem gerçekleştirilemiyor. Lütfen arabayı teslim ettikten sonra tekrar deneyiniz.";
-        public static string RentalAdded=" Kiralanacak Araba bilgileri eklendi";
+        public static string RentalAdded= " Kiralanacak Araba bilgileri eklendi";
+        public static string CarAdded = "Araba Eklendi";
+        public static string UpdateAvailable="Güncelleme gerçekleştirildi.";
+        public static string NotUpdate="Güncelleme gerçekleştirilemedi. Lütfen tekrar deneyiniz.";
+        public static string RentalListed="Kiralama bilgileri Listelendi.";
     }
 }
